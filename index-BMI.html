@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI</title>
+</head>
+<body>
+	<div id="my_div"></div>
+	<script>
+		var weight_lbs = parseFloat(prompt("Weight in pounds"));
+		var height_ft = parseFloat(prompt("Height in Feet"));
+		var height_in = parseFloat(prompt("Height in Inches"));
+		// console.log ("Weight:" + weight_lbs + ", Height in Feet:" + height_ft + ", Height in Inches:" + height_in);
+		var inches_total = ((height_ft * 12) + height_in);
+		// console.log(inches_total);
+		var height_meters = (inches_total * 0.0254)
+		// console.log(height_meters);
+		var weight_kg = (weight_lbs / 2.2);
+		var BMI = Math.round(parseFloat((weight_kg / (height_meters * height_meters))));
+		// console.log(weight_kg);
+		alert("Your BMI is: "BMI);
+	</script>
+</body>
+</html>
