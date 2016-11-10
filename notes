@@ -1,0 +1,21 @@
+notes
+
+
+			/* var myDiv = document.getElementById("my_div");
+			// get a reference to this div element
+
+		function changeColor() {
+
+
+			var colors = ["red", "blue", "#ff6600", "green"];
+
+			var chosen = colors[Math.floor(Math.random() * colors.length)];
+
+			myDiv.style.backgroundColor = chosen; // used to be "red" but now random
+			myDiv.style.height = "300px";
+			myDiv.style.width = "300px";
+			window.requestAnimationFrame(changeColor);
+	}
+	changeColor();
+	// myDiv.onclick = changeColor;
+	window.requestAnimationFrame(changeColor); */

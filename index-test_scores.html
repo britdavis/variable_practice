@@ -5,7 +5,22 @@
 </head>
 <body>
 	<script>
-		var test_scores = prompt([])
+		// I started with this but didn't finish last night.
+		// I didn't know how to input values into the array 
+		// or get them out so I went to research and forgot to finish.
+		// And the rest of it is what we talked about on 9/22
+
+		var test_scores = [];
+		test_scores = prompt("Enter test scores, separated by commas").split(",");
+		var sum = 0;
+		console.log(test_scores);
+		for (var a of test_scores) {
+			sum += parseInt(a, 10);
+		}
+		console.log(sum);
+		average = sum / test_scores.length;
+		alert('The average is ' + average);
+
 	</script>
 
 </body>
